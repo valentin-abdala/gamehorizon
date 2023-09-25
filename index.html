@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Horizon - Inicio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+
+    <!-- FUENTE STALINIST ONE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit&family=Stalinist+One&display=swap" rel="stylesheet">
+
+    <!-- FUENTE LEAGUE SPARTAN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Noto+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <p class="header-tit">GAME HORIZON</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="h-active">inicio</a></li>
+                <li><a href="pages/catalogo.html" class="h-inactive">catálogo</a></li>
+                <li><a href="pages/soundtracks.html" class="h-inactive">soundtracks</a></li>
+                <li><a href="pages/trailers.html" class="h-inactive">trailers</a></li>
+                <li><a href="pages/contacto.html" class="h-inactive">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main>
+
+        <!-- CARRUSEL -->
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators" id="carr-sign">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="carr">
+                        <img src="images/index/carruselimguno.jpg" class="d-block w-100" alt="Imagen Carrusel 1" id="carr-img">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div id="carr-text">
+                                <h5>AMPLIO CATÁLOGO DE JUEGOS MODERNOS</h5>
+                                <p>Encuentra tu próxima aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carr">
+                        <img src="images/index/carruselimgdos.jpg" class="d-block w-100" alt="Imagen Carrusel 2" id="carr-img">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div id="carr-text">
+                                <h5>SOUNDTRACKS</h5>
+                                <p>Las mejores bandas sonoras que acompañan tu historia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carr">
+                        <img src="images/index/carruselimgtres.jpg" class="d-block w-100" alt="Imagen Carrusel 3" id="carr-img">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div id="carr-text">
+                                <h5>TRAILERS</h5>
+                                <p>Adelantos que despiertan la curiosidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" id="carr-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="carr-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- CATÁLOGO DEL INDEX -->
+
+        <!-- JUEGOS POPULARES -->
+        <section class="categoria-container">
+            <div class="tit-cate"><p>Juegos Populares</p></div>
+            <div class="griditemindex1"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/tlou1.jpg" alt="The Last Of Us I" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex2"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/bloodborne.jpg" alt="Bloodborne" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex3"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/thewitcher.jpg" alt="The Witcher 3" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex4"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/reddeaddos.jpg" alt="Red Dead Redemption II" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex5"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/uncharted.jpg" alt="Uncharted 4" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+        </section>
+
+        <!-- NUEVOS LANZAMIENTOS -->
+        <section class="categoria-container">
+            <div class="tit-cate"><p>Nuevos Lanzamientos</p></div>
+            <div class="griditemindex1"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/gowragn.jpg" alt="God of War: Ragnarok" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex2"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/eldenring.jpg" alt="Elden Ring" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex3"><a href="pages/catalogo.html#acmirage">
+                <div class="img-wrapper">
+                    <img src="images/acmirage.jpg" alt="Assassin's Creed Mirage" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Basim, un astuto ladrón callejero en la Bagdad del siglo IX se convierte en un asesino mortal 
+                        a través de una misteriosa organización conocida como los Ocultos.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex4"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/spidermandos.jpg" alt="Spiderman 2" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex5"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/hogwartsly.jpg" alt="Hogwarts Legacy" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+        </section>
+
+        <!-- CLÁSICOS PRESERVADOS -->
+        <section class="categoria-container">
+            <div class="tit-cate"><p>Clásicos Preservados</p></div>
+            <div class="griditemindex1"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/darksouls.jpg" alt="Dark Souls I" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex2"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/residentevil.jpg" alt="Resident Evil 2" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex3"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/reddeaduno.jpg" alt="Red Dead Redemption I" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex4"><a href="pages/catalogo.html#ac2">
+                <div class="img-wrapper">
+                    <img src="images/acdos.jpg" alt="Assassin's Creed II" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex5"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/metalgearsolid.jpg" alt="Metal Gear Solid 3" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+        </section>
+
+        <!-- NOMINADOS -->
+        <section class="categoria-container">
+            <div class="tit-cate"><p>Nominados al <em>Game of the Year</em></p></div>
+            <div class="griditemindex1"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/horizonzd.jpg" alt="Horizon Zero Dawn" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex2"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/ghostot.jpg" alt="Ghost of Tsushima" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex3"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/fallout.jpg" alt="Fallout 4" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex4"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/deathstranding.jpg" alt="Death Stranding" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+            <div class="griditemindex5"><a href="pages/catalogo.html">
+                <div class="img-wrapper">
+                    <img src="images/doom.jpg" alt="Doom" class="grid-image-index blur zoom">
+                    <div class="cont-hover-index fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Praesentium, itaque quo molestiae quos provident quibusdam 
+                                            architecto fugiat a dolor voluptatibus numquam pariatur autem 
+                                            blanditiis sunt repellendus, vel, doloremque magni? Nihil.</div>
+                </div>
+            </a></div>
+        </section>
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        
+        <!-- LINKS DEL FOOTER -->
+        <section class="links-footer">
+            <ul>
+                <li><a href="index.html" class="f-active">inicio</a></li>
+                <li><a href="pages/catalogo.html" class="f-inactive">catálogo</a></li>
+                <li><a href="pages/soundtracks.html" class="f-inactive">soundtracks</a></li>
+                <li><a href="pages/trailers.html" class="f-inactive">trailers</a></li>
+                <li><a href="pages/contacto.html" class="f-inactive">contacto</a></li>
+            </ul>
+        </section>
+
+        <!-- INFO DEL FOOTER -->
+        <section class="f-info">
+            <div class="derechos">
+                <p class="f-tit">GAME HORIZON</p>
+                <p class="cr-f">© 2023 Game Horizon Valentín Abdala</p>
+            </div>
+            <div class="redes-footer">
+                <ul>
+                    <li><a href="https://www.instagram.com/game.horizon.encyc/" target="_blank"><img src="icons/instagram.png" alt="Instagram" class="red-item"></a></li>
+                    <li><a href="https://twitter.com/GameHorizonEnc" target="_blank"><img src="icons/twitter.png" alt="Twitter" class="red-item"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61550876965054&is_tour_dismissed=true" target="_blank"><img src="icons/facebook.png" alt="Facebook" class="red-item"></a></li>
+                </ul>
+            </div>
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
