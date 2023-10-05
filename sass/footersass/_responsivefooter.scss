@@ -1,0 +1,20 @@
+@media only screen and (max-width: 500px) {
+    .links-footer {
+        font-size: 10px;
+        a {
+            margin-right: 20px;
+        }
+    }
+    .f-info{
+        .f-tit {
+            font-size: 8px;
+        }
+        .cr-f {
+            font-size: 6px;
+        }
+        .red-item {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

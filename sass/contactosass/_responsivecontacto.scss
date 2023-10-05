@@ -1,0 +1,19 @@
+@media only screen and (max-width: 500px) {
+    form {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        max-width: 200px;
+        padding: 5px;
+        .form-input {
+            font-size: 7px;
+            padding: 5px;
+        }
+        .form-mensaje {
+            padding-bottom: 25px;
+            margin-bottom: 7px;
+        }
+        .titulo-form {
+            font-size: 10px;
+        }
+    }
+}

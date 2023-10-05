@@ -1,0 +1,23 @@
+@media only screen and (max-width: 500px) {
+    .portada-st {
+        display: none;
+    }
+    .portada-st-txt {
+        display: none;
+    }
+    .st-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20px 176px;
+        font-size: 8px;
+        margin-top: 50px;
+        column-gap: 3%;
+        grid-template-areas: 
+        "txt-st1 txt-st2 txt-st3 txt-st4"
+        "tema1 tema2 tema3 tema4";
+        .tema1, .tema2, .tema3, .tema4 {
+            height: 176px;
+            width: 100%;
+        }
+    }
+}

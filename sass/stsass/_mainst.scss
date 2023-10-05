@@ -1,0 +1,67 @@
+.portada-st {
+    width: 100%;
+    height: 399px;
+    margin-top: 80px;
+    animation: fade-in 0.5s ease;
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    -moz-filter: brightness(40%);
+}
+.portada-st-txt {
+    color: white;
+    position: absolute;
+    top: 50%;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    animation: fade-in 0.5s ease;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+.st-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 352px;
+    font-family: 'League Spartan', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    column-gap: 3%;
+    grid-template-areas: 
+    "txt-st1 txt-st2 txt-st3 txt-st4"
+    "tema1 tema2 tema3 tema4";
+    .txt-st1 {
+        grid-area: txt-st1;
+        margin: 0 auto;
+    }
+    .txt-st2 {
+        grid-area: txt-st2;
+        margin: 0 auto;
+    }
+    .txt-st3 {
+        grid-area: txt-st3;
+        margin: 0 auto;
+    }
+    .txt-st4 {
+        grid-area: txt-st4;
+        margin: 0 auto;
+    }
+    .tema1 {
+        grid-area: tema1;
+    }
+    .tema2 {
+        grid-area: tema2;
+    }
+    .tema3 {
+        grid-area: tema3;
+    }
+    .tema4 {
+        grid-area: tema4;
+    }
+    .tema1, .tema2, .tema3, .tema4 {
+        height: 352px;
+        width: 100%;
+    }
+}

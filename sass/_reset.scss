@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* ANIMACIÓN DE CARGA */
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -15,4 +16,41 @@
     }
 }
 
+/* ESTILOS PRESTABLECIDOS */
 $main-color: #0E0E7B;
+
+/* ANIMACIÓN DEL HOVER */
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.img-wrapper > .grid-image-index {
+    display: block;
+    width: 100%;
+}
+.img-wrapper > .cont-hover-index {
+    position: absolute;
+    inset: 0;
+    font-size: 12px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    text-align: justify;
+}
+.img-wrapper > .grid-image-index,
+.img-wrapper > .cont-hover-index {
+transition: 200ms ease-in-out;
+}
+.img-wrapper > .cont-hover-index.fade {
+opacity: 0;
+}
+.img-wrapper:hover > .cont-hover-index.fade {
+    opacity: 1;
+}
+.img-wrapper:hover > .grid-image-index.blur {
+    filter: blur(3px);
+}
+.img-wrapper:hover > .grid-image-index.zoom {
+    transform: scale(1.2);
+}

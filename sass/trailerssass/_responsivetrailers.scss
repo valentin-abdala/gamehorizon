@@ -1,0 +1,12 @@
+@media only screen and (max-width: 500px) {
+    .trail-cont {
+        margin-top: 110px;
+        max-width: 200px;
+        margin: 110px auto;
+        justify-content: space-around;
+        .trail-item {
+            width: 280px;
+            height: 157px;
+        }
+    }
+}

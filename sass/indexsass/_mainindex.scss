@@ -1,0 +1,62 @@
+/* CARRUSEL */
+
+#carr-sign, #carr-prev #carr-next {
+    z-index: 1;
+}
+
+#carr {
+    z-index: -2;
+    width: 100%;
+    height: 399px;
+    margin-top: 80px; 
+    #carr-img {
+        filter: brightness(60%);
+        -webkit-filter: brightness(60%);
+        -moz-filter: brightness(60%);
+    }
+    #carr-text {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
+    }
+}
+
+/* GRILLAS DE CATEGORÍAS */
+
+.categoria-container {
+    margin: 3% 5% 75px 5%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid; 
+    grid-template-columns: repeat(5, auto); 
+    grid-template-rows: 50px auto; 
+    column-gap: 5%;
+    grid-template-areas: 
+    "categoria categoria categoria categoria categoria"
+    "item1 item2 item3 item4 item5"; 
+    .tit-cate { 
+        grid-area: categoria; 
+        font-family: 'League Spartan', sans-serif;
+        font-size: 24px;
+    }
+    .griditemindex1 { 
+        grid-area: item1; 
+    }
+    .griditemindex2 { 
+        grid-area: item2; 
+    }
+    .griditemindex3 { 
+        grid-area: item3; 
+    }
+    .griditemindex4 { 
+        grid-area: item4; 
+    }
+    .griditemindex5 { 
+        grid-area: item5; 
+    }
+    .grid-image-index {
+        width: 100%;
+        height: 100%;
+    }
+}

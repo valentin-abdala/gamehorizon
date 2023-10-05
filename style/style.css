@@ -1,10 +1,12 @@
 @charset "UTF-8";
+/* RESET */
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
+/* ANIMACIÓN DE CARGA */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -15,6 +17,51 @@
     transform: translateY(0);
   }
 }
+/* ESTILOS PRESTABLECIDOS */
+/* ANIMACIÓN DEL HOVER */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper > .grid-image-index {
+  display: block;
+  width: 100%;
+}
+
+.img-wrapper > .cont-hover-index {
+  position: absolute;
+  inset: 0;
+  font-size: 12px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  text-align: justify;
+}
+
+.img-wrapper > .grid-image-index,
+.img-wrapper > .cont-hover-index {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .cont-hover-index.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > .cont-hover-index.fade {
+  opacity: 1;
+}
+
+.img-wrapper:hover > .grid-image-index.blur {
+  filter: blur(3px);
+}
+
+.img-wrapper:hover > .grid-image-index.zoom {
+  transform: scale(1.2);
+}
+
+/* HEADER */
 header {
   background-color: #0E0E7B;
   color: #FFFFFF;
@@ -72,6 +119,23 @@ header ul li a {
   animation: fade-in 0.5s ease;
 }
 
+@media only screen and (max-width: 500px) {
+  header {
+    height: 40px;
+  }
+  header .header-tit {
+    font-size: 16px;
+    margin: 2% 8% 0 2%;
+  }
+  header ul {
+    font-size: 10px;
+    margin-top: 5%;
+  }
+  header ul li a {
+    margin-right: 4px;
+  }
+}
+/* FOOTER */
 #footer {
   background-color: #0E0E7B;
   width: 100%;
@@ -139,10 +203,26 @@ header ul li a {
   height: 50px;
 }
 
-/*/////////////////////////////////*/
-/* MAIN */
+@media only screen and (max-width: 500px) {
+  .links-footer {
+    font-size: 10px;
+  }
+  .links-footer a {
+    margin-right: 20px;
+  }
+  .f-info .f-tit {
+    font-size: 8px;
+  }
+  .f-info .cr-f {
+    font-size: 6px;
+  }
+  .f-info .red-item {
+    width: 25px;
+    height: 25px;
+  }
+}
 /* INDEX */
-/* PORTADA */
+/* CARRUSEL */
 #carr-sign, #carr-prev #carr-next {
   z-index: 1;
 }
@@ -153,19 +233,16 @@ header ul li a {
   height: 399px;
   margin-top: 80px;
 }
-
-#carr-img {
+#carr #carr-img {
   filter: brightness(60%);
   -webkit-filter: brightness(60%);
   -moz-filter: brightness(60%);
 }
-
-#carr-text {
+#carr #carr-text {
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
 }
 
-/*/////////////////////////////////*/
 /* GRILLAS DE CATEGORÍAS */
 .categoria-container {
   margin: 3% 5% 75px 5%;
@@ -179,111 +256,67 @@ header ul li a {
   column-gap: 5%;
   grid-template-areas: "categoria categoria categoria categoria categoria" "item1 item2 item3 item4 item5";
 }
-
-.tit-cate {
+.categoria-container .tit-cate {
   grid-area: categoria;
   font-family: "League Spartan", sans-serif;
   font-size: 24px;
 }
-
-.griditemindex1 {
+.categoria-container .griditemindex1 {
   grid-area: item1;
 }
-
-.griditemindex2 {
+.categoria-container .griditemindex2 {
   grid-area: item2;
 }
-
-.griditemindex3 {
+.categoria-container .griditemindex3 {
   grid-area: item3;
 }
-
-.griditemindex4 {
+.categoria-container .griditemindex4 {
   grid-area: item4;
 }
-
-.griditemindex5 {
+.categoria-container .griditemindex5 {
   grid-area: item5;
 }
-
-.grid-image-index {
+.categoria-container .grid-image-index {
   width: 100%;
   height: 100%;
 }
 
-/*/////////////////////////////////*/
-/* ANIMACIÓN DEL HOVER EN EL INDEX*/
-.img-wrapper {
-  position: relative;
-  overflow: hidden;
+@media only screen and (max-width: 500px) {
+  #carouselExampleCaptions {
+    display: none;
+  }
+  .categoria-container {
+    margin-top: 50px;
+  }
+  .categoria-container .tit-cate {
+    font-size: 16px;
+  }
 }
-
-.img-wrapper > .grid-image-index {
-  display: block;
-  width: 100%;
-}
-
-.img-wrapper > .cont-hover-index {
-  position: absolute;
-  inset: 0;
-  font-size: 12px;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-family: "League Spartan", sans-serif;
-  text-align: justify;
-}
-
-.img-wrapper > .grid-image-index,
-.img-wrapper > .cont-hover-index {
-  transition: 200ms ease-in-out;
-}
-
-.img-wrapper > .cont-hover-index.fade {
-  opacity: 0;
-}
-
-.img-wrapper:hover > .cont-hover-index.fade {
-  opacity: 1;
-}
-
-.img-wrapper:hover > .grid-image-index.blur {
-  filter: blur(3px);
-}
-
-.img-wrapper:hover > .grid-image-index.zoom {
-  transform: scale(1.2);
-}
-
-/*/////////////////////////////////*/
-/* CATÁLOGO*/
+/* CATÁLOGO */
 /* SELECTOR DE PAGINAS*/
 #pag-select {
   width: 25%;
   margin: 0 auto;
   margin-top: 7%;
   margin-bottom: 4%;
+  animation: fade-in 0.5s ease;
 }
-
-#pag-sel-act {
+#pag-select #pag-sel-act {
   background-color: #0E0E7B;
   color: white;
   border-radius: 10px;
 }
-
-#pag-sel-inact {
+#pag-select #pag-sel-inact {
   color: #0E0E7B;
   border-radius: 10px;
   transition: 0.5s;
 }
-
-#pag-sel-inact:hover {
+#pag-select #pag-sel-inact:hover {
   background-color: #0E0E7B;
   color: #FFFFFF;
   transition: 0.5s;
 }
 
-/*/////////////////////////////////*/
 /* CATÁLOGO CARDS */
 .card-cata {
   background-color: #0E0E7B;
@@ -298,13 +331,21 @@ header ul li a {
   grid-template-rows: 50px auto;
   grid-template-areas: "img-cata tit-cata carrito" "img-cata txt-cata txt-cata";
 }
-
-.img-cata {
+.card-cata .img-cata {
   grid-area: img-cata;
   margin: 8% 0% 8% 8%;
 }
-
-.tit-cata {
+.card-cata .cata-item {
+  width: 195px;
+  height: 270px;
+}
+.card-cata .carrito {
+  grid-area: carrito;
+  width: 27px;
+  height: 27px;
+  margin-top: 25%;
+}
+.card-cata .tit-cata {
   grid-area: tit-cata;
   margin: 1% 0% 0% 0%;
   color: white;
@@ -312,8 +353,7 @@ header ul li a {
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
 }
-
-.txt-cata {
+.card-cata .txt-cata {
   grid-area: txt-cata;
   color: white;
   font-weight: 300;
@@ -321,15 +361,7 @@ header ul li a {
   font-family: "League Spartan", sans-serif;
   line-height: 1.6;
 }
-
-.carrito {
-  grid-area: carrito;
-  width: 27px;
-  height: 27px;
-  margin-top: 25%;
-}
-
-.prox-sign {
+.card-cata .prox-sign {
   position: absolute;
   top: 84%;
   width: 17.1%;
@@ -341,12 +373,34 @@ header ul li a {
   background: rgba(0, 0, 0, 0.65);
 }
 
-.cata-item {
-  width: 195px;
-  height: 270px;
+@media only screen and (max-width: 500px) {
+  .card-cata {
+    display: grid;
+    grid-template-columns: 22% 68% 10%;
+    grid-template-rows: 25px auto;
+    grid-template-areas: "img-cata tit-cata carrito" "img-cata txt-cata txt-cata";
+  }
+  .card-cata .img-cata {
+    margin: auto 0 auto 10%;
+  }
+  .card-cata .cata-item {
+    width: 97px;
+    height: 135px;
+  }
+  .card-cata .carrito {
+    height: 13px;
+    width: 13px;
+    margin-top: 1%;
+  }
+  .card-cata .tit-cata {
+    font-size: 13px;
+    margin: 1% 0 0 12%;
+  }
+  .card-cata .txt-cata {
+    font-size: 8px;
+    margin: 0 0 0 12%;
+  }
 }
-
-/*/////////////////////////////////*/
 /* SOUNDTRACKS */
 .portada-st {
   width: 100%;
@@ -383,199 +437,40 @@ header ul li a {
   column-gap: 3%;
   grid-template-areas: "txt-st1 txt-st2 txt-st3 txt-st4" "tema1 tema2 tema3 tema4";
 }
-
-.txt-st1 {
+.st-container .txt-st1 {
   grid-area: txt-st1;
   margin: 0 auto;
 }
-
-.txt-st2 {
+.st-container .txt-st2 {
   grid-area: txt-st2;
   margin: 0 auto;
 }
-
-.txt-st3 {
+.st-container .txt-st3 {
   grid-area: txt-st3;
   margin: 0 auto;
 }
-
-.txt-st4 {
+.st-container .txt-st4 {
   grid-area: txt-st4;
   margin: 0 auto;
 }
-
-.tema1 {
+.st-container .tema1 {
   grid-area: tema1;
 }
-
-.tema2 {
+.st-container .tema2 {
   grid-area: tema2;
 }
-
-.tema3 {
+.st-container .tema3 {
   grid-area: tema3;
 }
-
-.tema4 {
+.st-container .tema4 {
   grid-area: tema4;
 }
-
-.tema1, .tema2, .tema3, .tema4 {
+.st-container .tema1, .st-container .tema2, .st-container .tema3, .st-container .tema4 {
   height: 352px;
   width: 100%;
 }
 
-/*/////////////////////////////////*/
-/* TRAILERS */
-.trail-cont {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 70px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.trail-item {
-  width: 560px;
-  height: 315px;
-}
-
-/*/////////////////////////////////*/
-/* CONTACTO */
-form {
-  max-width: 400px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 120px auto;
-  background-color: #0E0E7B;
-  animation: fade-in 0.5s ease;
-}
-
-.form-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-input {
-  margin-top: 10px;
-  font-family: "League Spartan", sans-serif;
-  font-size: 15px;
-  padding: 10px;
-  outline: none;
-  border: none;
-  border: 1px solid rgb(154, 152, 152);
-  border-radius: 15px;
-}
-
-.form-mensaje {
-  resize: none;
-  padding-bottom: 50px;
-  margin-bottom: 15px;
-}
-
-.form-rta {
-  background-color: #FFFFFF;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  color: #0E0E7B;
-  transition: 0.5s;
-}
-
-.form-rta:hover {
-  text-decoration: underline;
-  transition: 0.5s;
-}
-
-.titulo-form {
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  font-family: "League Spartan", sans-serif;
-}
-
-/*/////////////////////////////////*/
-/* FOOTER*/
-/*/////////////////////////////////*/
-/* DISEÑO RESPONSIVE */
-/* MOBILE */
 @media only screen and (max-width: 500px) {
-  /* HEADER */
-  header {
-    height: 40px;
-  }
-  .header-tit {
-    font-size: 16px;
-    margin: 2% 8% 0 2%;
-  }
-  header ul {
-    font-size: 10px;
-    margin-top: 5%;
-  }
-  nav ul li a {
-    margin-right: 4px;
-  }
-  /* FOOTER */
-  .links-footer {
-    font-size: 10px;
-  }
-  .links-footer a {
-    margin-right: 20px;
-  }
-  .f-tit {
-    font-size: 8px;
-  }
-  .cr-f {
-    font-size: 6px;
-  }
-  .red-item {
-    width: 25px;
-    height: 25px;
-  }
-  /* INDEX */
-  #carouselExampleCaptions {
-    display: none;
-  }
-  .categoria-container {
-    margin-top: 50px;
-  }
-  .tit-cate {
-    font-size: 16px;
-  }
-  /* CATÁLOGO */
-  .card-cata {
-    display: grid;
-    grid-template-columns: 22% 68% 10%;
-    grid-template-rows: 25px auto;
-    grid-template-areas: "img-cata tit-cata carrito" "img-cata txt-cata txt-cata";
-  }
-  .img-cata {
-    margin: auto 0 auto 10%;
-  }
-  .tit-cata {
-    font-size: 13px;
-    margin: 1% 0 0 12%;
-  }
-  .txt-cata {
-    font-size: 8px;
-    margin: 0 0 0 12%;
-  }
-  .carrito {
-    height: 13px;
-    width: 13px;
-    margin-top: 1%;
-  }
-  .cata-item {
-    width: 97px;
-    height: 135px;
-  }
-  .prox-sign {
-    display: none;
-  }
-  /* SOUNDTRACKS */
   .portada-st {
     display: none;
   }
@@ -591,37 +486,102 @@ form {
     column-gap: 3%;
     grid-template-areas: "txt-st1 txt-st2 txt-st3 txt-st4" "tema1 tema2 tema3 tema4";
   }
-  .tema1, .tema2, .tema3, .tema4 {
+  .st-container .tema1, .st-container .tema2, .st-container .tema3, .st-container .tema4 {
     height: 176px;
     width: 100%;
   }
-  /* TRAILERS */
+}
+/* TRAILERS */
+.trail-cont {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trail-cont .trail-item {
+  width: 560px;
+  height: 315px;
+}
+
+@media only screen and (max-width: 500px) {
   .trail-cont {
     margin-top: 110px;
     max-width: 200px;
     margin: 110px auto;
     justify-content: space-around;
   }
-  .trail-item {
+  .trail-cont .trail-item {
     width: 280px;
     height: 157px;
   }
-  /* CONTACTO */
+}
+/* CONTACTO */
+form {
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 120px auto;
+  background-color: #0E0E7B;
+  animation: fade-in 0.5s ease;
+}
+form .form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form .titulo-form {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+}
+form .form-input {
+  margin-top: 10px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(154, 152, 152);
+  border-radius: 15px;
+}
+form .form-mensaje {
+  resize: none;
+  padding-bottom: 50px;
+  margin-bottom: 15px;
+}
+form .form-rta {
+  background-color: #FFFFFF;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  color: #0E0E7B;
+  transition: 0.5s;
+}
+form .form-rta:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 500px) {
   form {
     margin-top: 60px;
     margin-bottom: 20px;
     max-width: 200px;
     padding: 5px;
   }
-  .form-input {
+  form .form-input {
     font-size: 7px;
     padding: 5px;
   }
-  .form-mensaje {
+  form .form-mensaje {
     padding-bottom: 25px;
     margin-bottom: 7px;
   }
-  .titulo-form {
+  form .titulo-form {
     font-size: 10px;
   }
 }

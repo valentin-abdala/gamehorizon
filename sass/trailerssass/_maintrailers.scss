@@ -1,0 +1,13 @@
+.trail-cont {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .trail-item {
+        width: 560px;
+        height: 315px;
+    }
+}
