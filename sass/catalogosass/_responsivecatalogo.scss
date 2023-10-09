@@ -1,32 +1,9 @@
-@media only screen and (max-width: 500px) {
-    .card-cata {
-        display: grid;
-        grid-template-columns: 22% 68% 10%;
-        grid-template-rows: 25px auto;
-        grid-template-areas: 
-        "img-cata tit-cata carrito"
-        "img-cata txt-cata txt-cata";
-        .img-cata {
-            margin: auto 0 auto 10%;
-        }
-        .cata-item {
-            width: 97px;
-            height: 135px;
-        }
-        .carrito {
-            height: 13px;
-            width: 13px;
-            margin-top: 1%;
-        }
-        .tit-cata {
-            font-size: 13px;
-            margin: 1% 0 0 12%;
-        }
-        
-        .txt-cata {
-            font-size: 8px;
-            margin: 0 0 0 12%;
-        }
-
+@media only screen and (min-width: 600px) {
+    .card-catalogo {
+        flex-direction: row;
+    }
+    .game-main {
+        text-align: left;
+        margin-left: 2em;
     }
 }

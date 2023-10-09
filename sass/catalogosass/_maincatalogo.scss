@@ -1,19 +1,66 @@
 /* SELECTOR DE PAGINAS*/
 
-#pag-select {
-    width: 25%;
+.page-selector {
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
-    margin-top: 7%;
-    margin-bottom: 4%;
+    font-family: $main-font;
+    margin-top: 90px;
+    margin-bottom: 50px;
     animation: fade-in 0.5s ease;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        .item-selector-inact {
+            color: $main-color;
+            border: 1px solid rgb(168, 168, 168);
+            transition: 0.5s;
+        }
+        .item-selector-act {
+            color: #FFFFFF;
+            background-color: $main-color;
+            border: 1px solid $main-color;
+        }
+        .item-selector-act, .item-selector-inact {
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        .item-selector-inact:hover {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            color: #FFFFFF;
+            transition: 0.5s
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#pag-select {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    animation: fade-in 0.5s ease;
+    font-family: 'League Spartan', sans-serif;
     #pag-sel-act {
         background-color: #0E0E7B;
         color: white;
-        border-radius: 10px;
     }
     #pag-sel-inact {
         color: #0E0E7B;
-        border-radius: 10px;
         transition: 0.5s;
     }
     #pag-sel-inact:hover {
@@ -21,63 +68,73 @@
         color: #FFFFFF;
         transition: 0.5s;
     }
+    .box-sel1 {
+        border-radius: 10px 0 0 10px;
+    }
+    .box-sel2 {
+        border-radius: 0 0 0 0;
+    }
+    .box-sel3 {
+        border-radius: 0 10px 10px 0;
+    }
 }
-
-/* CATÁLOGO CARDS */
-
-.card-cata {
-    background-color: #0E0E7B;
-    position: relative;
-    width: 75%;
+*/
+.card-catalogo {
+    width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background: $main-color;
     animation: fade-in 0.5s ease;
+    transition: 0.5s;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2em;
+    border-radius: 15px;
     margin-bottom: 5%;
-    display: grid;
-    grid-template-columns: 22% 73% 5%;
-    grid-template-rows: 50px auto;
-    grid-template-areas: 
-    "img-cata tit-cata carrito"
-    "img-cata txt-cata txt-cata";
-    .img-cata {
-        grid-area: img-cata;
-        margin: 8% 0% 8% 8%;
+    .multi-sb {
+        .game-img {
+            width: 146px;
+            height: 202px;
+            margin-bottom: 0.75em;
+            border-radius: 15px;
+            border: 3px solid #FFFFFF;
+        }
+        .multim-list {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 125px;
+            margin: 0 auto;
+            .multim-link {
+                opacity: 0.5;
+                font-size: 1.25rem;
+                transition: 0.5s;
+            }
+            .multim-link:hover {
+                opacity: 1;
+                transition: 0.5s;
+            }
+        }
     }
-    .cata-item {
-        width: 195px;
-        height: 270px;
-    }
-    .carrito {
-        grid-area: carrito;
-        width: 27px;
-        height: 27px;
-        margin-top: 25%;
-    }
-    .tit-cata {
-        grid-area: tit-cata;
-        margin: 1% 0% 0% 0%;
-        color: white;
-        font-size: 27px;
-        font-weight: 700;
+    .game-main{
         font-family: 'League Spartan', sans-serif;
+        .game-title {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .game-info, .game-sinopsis {
+            font-size: 14px;
+            font-weight: 300;
+        }
     }
-    .txt-cata {
-        grid-area: txt-cata;
-        color: white;
-        font-weight: 300;
-        font-size: 16px;
-        font-family: 'League Spartan', sans-serif;
-        line-height: 1.6;
-    }
-    .prox-sign {
-        position: absolute;
-        top: 84%;
-        width: 17.1%;
-        height: auto;
-        font-size: 20px;
-        text-align: center;
-        color: #FFFFFF;
-        font-family: 'League Spartan', sans-serif;
-        background: rgba(0, 0, 0, 0.65);
-    }
+}
+.card-catalogo:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }

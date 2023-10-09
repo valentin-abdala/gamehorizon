@@ -30,343 +30,284 @@
 
 <body>
 
-    <!-- HEADER -->
     <header>
-        <p class="header-tit">GAME HORIZON</p>
+        <h1 class="nav-title">GAME HORIZON</h1>
+        <input type="checkbox" id="burger-menu" class="burger-menu">
         <nav>
             <ul>
-                <li><a href="../index.html" class="h-inactive">inicio</a></li>
-                <li><a href="../pages/catalogo.html" class="h-active">catálogo</a></li>
-                <li><a href="../pages/soundtracks.html" class="h-inactive">soundtracks</a></li>
-                <li><a href="../pages/trailers.html" class="h-inactive">trailers</a></li>
-                <li><a href="../pages/contacto.html" class="h-inactive">contacto</a></li>
+                <li><a href="../index.html" class="h-inact">Inicio</a></li>
+                <li><a href="../pages/catalogo.html" class="h-act">Catálogo</a></li>
+                <li><a href="../pages/soundtracks.html" class="h-inact">Soundtracks</a></li>
+                <li><a href="../pages/trailers.html" class="h-inact">Trailers</a></li>
+                <li><a href="../pages/contacto.html" class="h-inact">Contacto</a></li>
             </ul>
         </nav>
+        <label for="burger-menu" class="burger-menu-label">
+            <span></span>
+        </label>
     </header>
 
     <!-- MAIN -->
     <main>
 
-        <!-- SELECTOR DE PÁGINAS -->
         <section>
-            <nav id="pag-select">
-                <ul class="pagination pagination-lg">
-                  <li><a class="page-link" id="pag-sel-act" href="../pages/catalogo.html">A-D</a></li>
-                  <li><a class="page-link" id="pag-sel-inact" href="../pages/segundapag.html">E-M</a></li>
-                  <li><a class="page-link" id="pag-sel-inact" href="../pages/tercerapag.html">M-U</a></li>
+            <div class="page-selector">
+                <ul>
+                    <li ><a class="item-selector-act" href="../pages/catalogo.html">A-D</a></li>
+                    <li ><a class="item-selector-inact" href="../pages/segundapag.html">E-M</a></li>
+                    <li ><a class="item-selector-inact" href="../pages/tercerapag.html">N-Z</a></li>
                 </ul>
-            </nav>
+            </div>
         </section>
-        
-        <!-- CARTAS DE CATÁLOGO -->
 
         <!-- ASSASSIN'S CREED II -->
-        <section class="card-cata" id="ac2">
-            <div class="img-cata">
-                <img src="../images/acdos.jpg" alt="Assassin's Creed II" class="cata-item">
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/acdos.jpg" alt="Assassin's Creed II">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://store.ubisoft.com/ofertas/game?lang=es_AR&pid=56c4947f88a7e300458b4690&dwva
-                r_56c4947f88a7e300458b4690_Platform=pcdl&edition=Standard%20Edition&source=detail" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Assassin's Creed II</p>
+                <p class="game-info">· Desarrollador: Ubisoft Montreal<br>
+                    · Distribuidor: Ubisoft<br>
+                    · Lanzamiento: 17 de noviembre de 2009<br>
+                    · Género: Acción - Aventura - Sigilo<br>
+                    · Plataformas: PS3, PS4, Xbox 360, Xbox One, Microsoft Windows, MAC OS <br>
+                    · Horas de campaña: 20-25 hs</p>
+                <p class="game-sinopsis">
+                    Assassin's Creed II te lleva a la Italia del Renacimiento, donde interpretas a Ezio Auditore da Firenze, un joven noble convertido en asesino. A medida que persigues la venganza contra los templarios, te sumerges en una trama de conspiración y secretos, explorando ciudades históricas y luchando contra enemigos poderosos en una mezcla de acción y sigilo. <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Assassin's Creed II</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Ubisoft Montreal<br>
-                Distribuidor: Ubisoft<br>
-                Lanzamiento: 17 de noviembre de 2009<br>
-                Género: Acción - Aventura - Sigilo<br>
-                Plataformas: PS3, PS4, Xbox 360, Xbox One, Microsoft Windows, MAC OS <br>
-                Horas de campaña: 20-25 hs<br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quae aliquid repudiandae cum sit mollitia provident sunt labore, aspernatur tenetur fugiat sequi aperiam ipsum aliquam molestiae laborum natus assumenda culpa.</p>
-            </div>
-        </section>
+        </div>
 
         <!-- ASSASSIN'S CREED MIRAGE -->
-        <section class="card-cata" id="acmirage">
-            <div class="img-cata">
-                <img src="../images/acmirage.jpg" alt="Assassin's Creed Mirage" class="cata-item">
-                <div>
-                    <p class="prox-sign">PRÓXIMAMENTE</p>
-                </div>
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/acmirage.jpg" alt="Assassin's Creed Mirage">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://store.ubisoft.com/ofertas/assassins-creed-mirage/62ea4f9709372571f2736a72.html?
-                lang=es_AR&lang=la_AR" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Assassin's Creed Mirage</p>
+                <p class="game-info">· Desarrollador: Ubisoft Bordeaux<br>
+                    · Distribuidor: Ubisoft<br>
+                    · Lanzamiento: 5 de octubre de 2023<br>
+                    · Género: Acción - Aventura - Sigilo<br>
+                    · Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
+                    · Horas de campaña: 15-20 hs
+                </p>
+                <p class="game-sinopsis">
+                    En esta nueva entrega interpretamos a Basim, un joven delincuente callejero cuyo viaje nos guía hacia la maestría entre los Asesinos. La narrativa nos transporta a la Bagdad del siglo IX, durante el califato Abasí, donde exploramos nuestro pasado y enfrentamos la amenaza de los integrantes de la Orden que ejercen control sobre la ciudad.
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Assassin's Creed Mirage</p>
+        </div>
+
+        <!-- ASSASSIN'S CREED VALHALLA -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/acvalhalla.jpg" alt="Assassin's Creed Valhalla">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Ubisoft Bordeaux<br>
-                Distribuidor: Ubisoft<br>
-                Lanzamiento: 5 de octubre de 2023<br>
-                Género: Acción - Aventura - Sigilo<br>
-                Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
-                Horas de campaña: 15-20 hs<br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptates dolores aspernatur at doloribus recusandae vitae unde ratione quasi, quae nihil, voluptas facere ex maiores sequi natus repellendus suscipit nesciunt?</p>
+            <div class="game-main">
+                <p class="game-title">Assassin's Creed Valhalla</p>
+                <p class="game-info">· Desarrollador: Ubisoft Montreal<br>
+                    · Distribuidor: Ubisoft<br>
+                    · Lanzamiento: 10 de noviembre de 2020<br>
+                    · Género: Acción - Aventura - Rol<br>
+                    · Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
+                    · Horas de campaña: 40-60 hs
+                </p>
+                <p class="game-sinopsis">
+                    Assassin's Creed Valhalla te transporta a la época de los vikingos. Encarnas a Eivor, un guerrero vikingo, mientras lideras a tu clan en la conquista de Inglaterra. La trama se desarrolla en medio de conflictos políticos y religiosos, mientras te enfrentas a enemigos y descubres secretos de los asesinos y los templarios. El juego ofrece una experiencia épica de acción, exploración y gestión de tu asentamiento vikingo en un mundo abierto impresionante.
+                </p>
             </div>
-        </section>
+        </div>
+
+        <!-- BLOODBORNE -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/bloodborne.jpg" alt="Bloodborne">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </div>
+            <div class="game-main">
+                <p class="game-title">Bloodborne</p>
+                <p class="game-info">· Desarrollador: From Software<br>
+                    · Distribuidor: SCE Japan Studio<br>
+                    · Lanzamiento: 26 de marzo de 2015<br>
+                    · Género: ARPG - Acción<br>
+                    · Plataformas: PS4<br>
+                    · Horas de campaña: 30-40 hs
+                </p>
+                <p class="game-sinopsis">
+                    Bloodborne es un videojuego de acción y rol ambientado en la ciudad maldita de Yharnam, afectada por una enfermedad que transforma a sus habitantes en criaturas horripilantes. Como cazador, el jugador busca respuestas y una cura mientras se sumerge en una trama oscura y compleja que involucra a antiguos dioses y rituales macabros. Con una jugabilidad desafiante, combate visceral y una atmósfera única, el juego destaca por su narrativa intrigante y su estética gótica.
+                </p>
+            </div>
+        </div>
         
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/acvalhalla.jpg" alt="Assassin's Creed Valhalla" class="cata-item">
+        <!-- CYBERPUNK 2077 -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/cyberpunk.jpg" alt="Cyberpunk 2077">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://store.ubisoft.com/ofertas/assassins-creed-valhalla/5e8353ff5cdf9a21c0b4e72e.html?
-                lang=es_AR&lang=la_AR" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Cyberpunk 2077</p>
+                <p class="game-info">· Desarrollador: CD Projekt RED<br>
+                    · Distribuidor: CD Projekt - Warner Bros. Interactive Entertainment<br>
+                    · Lanzamiento: 10 de diciembre de 2020<br>
+                    · Género: Acción - Rol - Ciencia Ficción - Cyberpunk<br>
+                    · Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
+                    · Horas de campaña: 20-30 hs
+                </p>
+                <p class="game-sinopsis">
+                    En Night City, una metrópolis futurista obsesionada con la tecnología, el jugador asume el papel de V, un mercenario en una búsqueda por alcanzar la inmortalidad. La trama se desenvuelve en medio de facciones, corporaciones y tecnología avanzada, explorando decisiones morales y luchas por la supervivencia. La narrativa se mezcla con acción, exploración y personalización en un futuro cyberpunk lleno de intriga y peligro.
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Assassin's Creed Valhalla</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Ubisoft Montreal<br>
-                Distribuidor: Ubisoft<br>
-                Lanzamiento: 10 de noviembre de 2020<br>
-                Género: Acción - Aventura - Rol<br>
-                Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
-                Horas de campaña: 40-60 hs<br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique id possimus mollitia, consequuntur totam eligendi vel exercitationem vitae quasi sint aperiam voluptate nam beatae eius quaerat sed vero maxime veniam.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/bloodborne.jpg" alt="Bloodborne" class="cata-item">
+        <!-- DARK SOULS -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/darksouls.jpg" alt="Dark Souls">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Dark Souls</p>
+                <p class="game-info">· <br>
+                    · Desarrollador: From Software<br>
+                    · Distribuidor: From Software<br>
+                    · Lanzamiento: 22 de septiembre de 2011<br>
+                    · Género: Rol - Acción<br>
+                    · Plataformas: PS3, PS4, Xbox 360, Xbox One, Microsoft Windows, Nintendo Switch
+                </p>
+                <p class="game-sinopsis">
+                    En un mundo desolado y misterioso, te conviertes en un no muerto en busca de salvación en Dark Souls. Enfrentas desafíos épicos, desde combates intensos hasta la exploración de un entorno interconectado. La trama se revela sutilmente mientras descubres los secretos de un reino en ruinas. Con una jugabilidad desafiante y una atmósfera envolvente, Dark Souls te sumerge en una experiencia única de acción y fantasía.
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Bloodborne</p>
+        </div>
+        
+        <!-- DAYS GONE -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/daysgone.jpg" alt="Days Gone">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="txt-cata">
-                <p>Desarrollador: From Software<br>
-                Distribuidor: SCE Japan Studio<br>
-                Lanzamiento: 26 de marzo de 2015<br>
-                Género: ARPG<br>
-                Plataformas: PS4<br>
-                Horas de campaña: 30-40 hs<br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, sint. Possimus, sequi cupiditate dolores delectus laborum rerum molestiae alias aliquid eligendi ipsa. A commodi praesentium, optio unde corrupti necessitatibus dignissimos.</p>
+            <div class="game-main">
+                <p class="game-title">Days Gone</p>
+                <p class="game-info">· Desarrollador: SIE Bend Studio<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 26 de abril de 2019<br>
+                    · Género: Acción - Aventura - Terror<br>
+                    · Plataformas: PS4, PS5, Microsoft Windows<br>
+                    · Horas de campaña: 30-40 hs
+                </p>
+                <p class="game-sinopsis">
+                    En un mundo postapocalíptico, Deacon St. John, un motociclista y cazarrecompensas, lucha por la supervivencia tras un brote global que ha convertido a gran parte de la población en feroces criaturas llamadas Freakers. La historia se centra en la búsqueda de respuestas sobre la pérdida y la redención, mientras Deacon enfrenta hordas de Freakers y amenazas humanas en un paisaje desolado. La mezcla de acción, exploración y elementos de supervivencia hace de Days Gone una experiencia intensa y emocional.
+                </p>
             </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/cyberpunk.jpg" alt="Cyberpunk 2077" class="cata-item">
+        <!-- DEATH STRANDING -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/deathstranding.jpg" alt="Death Stranding">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Death Stranding</p>
+                <p class="game-info">· Desarrollador: Kojima Productions<br>
+                    · Distribuidor: Sony Interactive Entertainment - 505 Games<br>
+                    · Lanzamiento: 8 de noviembre de 2019<br>
+                    · Género: Aventura - Exploración - Apocalíptico<br>
+                    · Plataformas: PS4, PS5, Microsoft Windows<br>
+                    · Horas de campaña: 40-50 hs
+                </p>
+                <p class="game-sinopsis">
+                    En un mundo postapocalíptico, un repartidor llamado Sam Porter Bridges se embarca en una misión para reconectar ciudades aisladas y reconstruir la sociedad. La narrativa explora temas de conexión y aislamiento en un entorno desolado y alterado. Con la mecánica central de entrega de cargamentos y enfrentamientos con lo sobrenatural, el juego fusiona elementos de exploración, acción y una narrativa profunda en un paisaje surrealista.
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Cyberpunk 2077</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: CD Projekt RED<br>
-                Distribuidor: CD Projekt - Warner Bros. Interactive Entertainment<br>
-                Lanzamiento: 10 de diciembre de 2020<br>
-                Género: Acción - Rol - Ciencia Ficción - Cyberpunk<br>
-                Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
-                Horas de campaña: 20-30 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi quod quae corporis neque necessitatibus? Perspiciatis neque debitis expedita. Ipsum cum doloremque voluptatibus. Repellendus ad facere esse, tempore aut a!</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/darksouls.jpg" alt="Dark Souls" class="cata-item">
+        <!-- DETROIT: BECOME HUMAN -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/detroitbh.jpg" alt="Detroit: Become Human">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Detroit: Become Human</p>
+                <p class="game-info">Desarrollador: Quantic Dream<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 25 de mayo de 2018<br>
+                    · Género: Acción - Aventura - Ciencia Ficción - Cyberpunk<br>
+                    · Plataformas: PS4, Microsoft Windows<br>
+                    · Horas de campaña: 10-12 hs
+                </p>
+                <p class="game-sinopsis">
+                    En una futurista Detroit, androides con inteligencia artificial comienzan a cuestionar su existencia y rebelarse contra su programación. La historia sigue a varios androides, cada uno enfrentando dilemas éticos y tomando decisiones que afectarán el curso de la revolución. A través de una trama interactiva, el juego explora temas de libre albedrío, discriminación y los límites de la inteligencia artificial en un contexto social tenso y cambiante.
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Dark Souls</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: From Software<br>
-                Distribuidor: From Software<br>
-                Lanzamiento: 22 de septiembre de 2011<br>
-                Género: Rol - Acción<br>
-                Plataformas: PS3, PS4, Xbox 360, Xbox One, Microsoft Windows, Nintendo Switch<br>
-                Horas de campaña: 30-50 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/daysgone.jpg" alt="Days Gone" class="cata-item">
+        <!-- DOOM -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/doom.jpg" alt="Doom">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Doom</p>
+                <p class="game-info">· Desarrollador: id Software LLC<br>
+                    · Distribuidor: Bethesda Softworks<br>
+                    · Lanzamiento: 13 de mayo de 2016<br>
+                    · Género: Acción<br>
+                    · Plataformas: PS4, Xbox One, Microsoft Windows, Nintendo Switch<br>
+                    · Horas de campaña: 10-15 hs
+                </p>
+                <p class="game-sinopsis">
+                    En un escenario infernal y plagado de demonios, el Doom Slayer se encuentra en una misión implacable para detener la invasión demoníaca en Marte y el Infierno. La acción es frenética, con una amplia variedad de armas que permiten enfrentar hordas de enemigos en niveles intensos y brutales. La historia se desarrolla mientras se desata el caos, luchando contra demonios y descubriendo secretos en la búsqueda por la supervivencia de la humanidad.
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Days Gone</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: SIE Bend Studio<br>
-                Distribuidor: Sony Interactive Entertainment<br>
-                Lanzamiento: 26 de abril de 2019<br>
-                Género: Acción - Aventura - Terror<br>
-                Plataformas: PS4, PS5, Microsoft Windows<br>
-                Horas de campaña: 30-40 hs<br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi mollitia aliquam laboriosam adipisci, ipsa nam explicabo beatae veritatis cum, similique aspernatur inventore laudantium? Pariatur id a voluptates, illo totam amet.</p>
-            </div>
-        </section>
-
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/deathstranding.jpg" alt="Death Stranding" class="cata-item">
-            </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
-            </div>
-            <div class="tit-cata">
-                <p>Death Stranding</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Kojima Productions<br>
-                Distribuidor: Sony Interactive Entertainment - 505 Games<br>
-                Lanzamiento: 8 de noviembre de 2019<br>
-                Género: Aventura - Exploración - Apocalíptico<br>
-                Plataformas: PS4, PS5, Microsoft Windows<br>
-                Horas de campaña: 40-50 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
-
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/detroitbh.jpg" alt="Detroit: Become Human" class="cata-item">
-            </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
-            </div>
-            <div class="tit-cata">
-                <p>Detroit: Become Human</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Quantic Dream<br>
-                Distribuidor: Sony Interactive Entertainment<br>
-                Lanzamiento: 25 de mayo de 2018<br>
-                Género: Acción - Aventura - Ciencia Ficción - Cyberpunk<br>
-                Plataformas: PS4, Microsoft Windows<br>
-                Horas de campaña: 10-12 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
-
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/doom.jpg" alt="Doom" class="cata-item">
-            </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
-            </div>
-            <div class="tit-cata">
-                <p>Doom</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: id Software LLC<br>
-                Distribuidor: Bethesda Softworks<br>
-                Lanzamiento: 13 de mayo de 2016<br>
-                Género: Acción<br>
-                Plataformas: PS4, Xbox One, Microsoft Windows, Nintendo Switch<br>
-                Horas de campaña: 10-15 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -399,8 +340,13 @@
         </section>
     </footer>
     
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
     crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ea64268d78.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -27,340 +27,274 @@
 </head>
 <body>
     <header>
-        <p class="header-tit">GAME HORIZON</p>
+        <h1 class="nav-title">GAME HORIZON</h1>
+        <input type="checkbox" id="burger-menu" class="burger-menu">
         <nav>
             <ul>
-                <li><a href="../index.html" class="h-inactive">inicio</a></li>
-                <li><a href="../pages/catalogo.html" class="h-active">catálogo</a></li>
-                <li><a href="../pages/soundtracks.html" class="h-inactive">soundtracks</a></li>
-                <li><a href="../pages/trailers.html" class="h-inactive">trailers</a></li>
-                <li><a href="../pages/contacto.html" class="h-inactive">contacto</a></li>
+                <li><a href="../index.html" class="h-inact">Inicio</a></li>
+                <li><a href="../pages/catalogo.html" class="h-act">Catálogo</a></li>
+                <li><a href="../pages/soundtracks.html" class="h-inact">Soundtracks</a></li>
+                <li><a href="../pages/trailers.html" class="h-inact">Trailers</a></li>
+                <li><a href="../pages/contacto.html" class="h-inact">Contacto</a></li>
             </ul>
         </nav>
+        <label for="burger-menu" class="burger-menu-label">
+            <span></span>
+        </label>
     </header>
     <main>
         <!-- SELECTOR DE PÁGINAS -->
         <section>
-            <nav id="pag-select">
-                <ul class="pagination pagination-lg">
-                  <li><a class="page-link" id="pag-sel-inact" href="../pages/catalogo.html">A-D</a></li>
-                  <li><a class="page-link" id="pag-sel-act" href="../pages/segundapag.html">E-M</a></li>
-                  <li><a class="page-link" id="pag-sel-inact" href="../pages/tercerapag.html">M-U</a></li>
+            <div class="page-selector">
+                <ul>
+                    <li ><a class="item-selector-inact" href="../pages/catalogo.html">A-D</a></li>
+                    <li ><a class="item-selector-act" href="../pages/segundapag.html">E-M</a></li>
+                    <li ><a class="item-selector-inact" href="../pages/tercerapag.html">N-Z</a></li>
                 </ul>
-            </nav>
+            </div>
         </section>
 
         <!-- CARTAS DE CATÁLOGO -->
 
         <!-- ELDEN RING -->
-        <section class="card-cata" id="ac2">
-            <div class="img-cata">
-                <img src="../images/eldenring.jpg" alt="Elden Ring" class="cata-item">
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/eldenring.jpg" alt="Elden Ring">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://store.ubisoft.com/ofertas/game?lang=es_AR&pid=56c4947f88a7e300458b4690&dwva
-                r_56c4947f88a7e300458b4690_Platform=pcdl&edition=Standard%20Edition&source=detail" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Elden Ring</p>
+                <p class="game-info">· Desarrollador: From Software<br>
+                    · Distribuidor: Bandai Namco Entertainment<br>
+                    · Lanzamiento: 25 de febrero de 2022<br>
+                    · Género: Rol - Acción<br>
+                    · Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Elden Ring</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: <br>
-                Distribuidor: <br>
-                Lanzamiento: <br>
-                Género: <br>
-                Plataformas: <br>
-                Horas de campaña: <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum modi recusandae inventore, beatae dignissimos asperiores fugiat nesciunt cupiditate dolores. Nesciunt, corrupti? Necessitatibus praesentium dolorum doloribus assumenda ipsum dolor quo impedit!</p>
-            </div>
-        </section>
+        </div>
 
         <!-- FALLOUT 4 -->
-        <section class="card-cata" id="acmirage">
-            <div class="img-cata">
-                <img src="../images/fallout.jpg" alt="Fallout 4" class="cata-item">
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/fallout.jpg" alt="Fallout 4">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://store.ubisoft.com/ofertas/assassins-creed-mirage/62ea4f9709372571f2736a72.html?
-                lang=es_AR&lang=la_AR" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Fallout 4</p>
+                <p class="game-info">· Desarrollador: Bethesda Game Studios<br>
+                    · Distribuidor:	Bethesda Softworks<br>
+                    · Lanzamiento: 10 de noviembre de 2015<br>
+                    · Género: Rol - Acción - Post-Apocalíptico<br>
+                    · Plataformas: PS4, Xbox One, Microsoft Windows<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Fallout 4</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: <br>
-                Distribuidor: <br>
-                Lanzamiento: <br>
-                Género: <br>
-                Plataformas: <br>
-                Horas de campaña: <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia labore cum sed accusamus animi asperiores id mollitia facilis, ducimus deserunt. Tempore sint doloribus ex sit unde dicta laudantium veniam nam!</p>
-            </div>
-        </section>
-        
+        </div>
+
         <!-- FAR CRY 3 -->
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/farcry.jpg" alt="Far Cry 3" class="cata-item">
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/farcry.jpg" alt="Far Cry 3">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://store.ubisoft.com/ofertas/assassins-creed-valhalla/5e8353ff5cdf9a21c0b4e72e.html?
-                lang=es_AR&lang=la_AR" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Far Cry 3</p>
+                <p class="game-info">· Desarrollador: Ubisoft Montreal<br>
+                    · Distribuidor: Ubisoft<br>
+                    · Lanzamiento: 29 de noviembre de 2012<br>
+                    · Género: Acción - Aventura - Shooter<br>
+                    · Plataformas: PS3, PS4, Xbox 360, Xbox One, Microsoft Windows<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Far Cry 3</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: <br>
-                Distribuidor: <br>
-                Lanzamiento: <br>
-                Género: <br>
-                Plataformas: <br>
-                Horas de campaña: <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum aspernatur fuga laboriosam nemo at necessitatibus corrupti. Quibusdam, placeat facere nesciunt dicta eius dolores, iste, unde voluptatibus alias voluptatem similique.</p>
-            </div>
-        </section>
+        </div>
 
         <!-- GHOST OF TSUSHIMA -->
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/ghostot.jpg" alt="Ghost of Tsushima" class="cata-item">
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/ghostot.jpg" alt="Ghost of Tsushima">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Ghost of Tsushima</p>
+                <p class="game-info">· Desarrollador: Sucker Punch Productions<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 17 de julio de 2020<br>
+                    · Género: Acción - Aventura - Época<br>
+                    · Plataformas: PS4, PS5<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Ghost of Tsushima</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: <br>
-                Distribuidor: <br>
-                Lanzamiento: <br>
-                Género: <br>
-                Plataformas: <br>
-                Horas de campaña: <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, facilis libero optio sunt voluptate debitis eaque necessitatibus non, nihil quam quae deleniti nemo nulla, quas quidem placeat doloribus iste et!</p>
-            </div>
-        </section>
+        </div>
 
         <!-- GOF OF WAR: RAGNAROK -->
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/gowragn.jpg" alt="God of War: Ragnarok" class="cata-item">
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/gowragn.jpg" alt="God of War: Ragnarök">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">God of War: Ragnarök</p>
+                <p class="game-info">· Desarrollador: SIE Santa Monica Studio<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 9 de noviembre de 2022<br>
+                    · Género: Acción - Aventura - Fantasía<br>
+                    · Plataformas: PS4, PS5<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>God of War: Ragnarok</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: <br>
-                Distribuidor: <br>
-                Lanzamiento: <br>
-                Género: <br>
-                Plataformas: <br>
-                Horas de campaña: <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam in, suscipit, vitae aliquam mollitia blanditiis odit eveniet dignissimos odio velit natus esse recusandae ducimus ea incidunt aliquid ad aut tempora.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/darksouls.jpg" alt="Dark Souls" class="cata-item">
+        <!-- HORIZON ZERO DAWN -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/horizonzd.jpg" alt="Horizon Zero Dawn">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Horizon Zero Dawn</p>
+                <p class="game-info">· Desarrollador: Guerrilla Games<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 28 de febrero de 2017<br>
+                    · Género: Acción - Aventura - Rol - Post-Apocalíptico<br>
+                    · Plataformas: PS4, PS5, Microsoft Windows<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Dark Souls</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: From Software<br>
-                Distribuidor: From Software<br>
-                Lanzamiento: 22 de septiembre de 2011<br>
-                Género: Rol - Acción<br>
-                Plataformas: PS3, PS4, Xbox 360, Xbox One, Microsoft Windows, Nintendo Switch<br>
-                Horas de campaña: 30-50 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/daysgone.jpg" alt="Days Gone" class="cata-item">
+        <!-- HOGWARTS LEGACY -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/hogwartsly.jpg" alt="Hogwarts Legacy">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Hogwarts Legacy</p>
+                <p class="game-info">· Desarrollador: Avalanche Software<br>
+                    · Distribuidor: Warner Bros. Interactive Entertainment<br>
+                    · Lanzamiento: 10 de febrero de 2023<br>
+                    · Género: Rol - Acción<br>
+                    · Plataformas: PS4, PS5, Xbox One, Xbox Series, Microsoft Windows, Nintendo Switch<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Days Gone</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: SIE Bend Studio<br>
-                Distribuidor: Sony Interactive Entertainment<br>
-                Lanzamiento: 26 de abril de 2019<br>
-                Género: Acción - Aventura - Terror<br>
-                Plataformas: PS4, PS5, Microsoft Windows<br>
-                Horas de campaña: 30-40 hs<br>
-                Days Gone sigue la historia de Deacon St. John, un ex miembro de una pandilla de motociclistas. 
-                Después de descubrir que existe la posibilidad de que su esposa Sarah todavía esté viva, 
-                Deacon se embarca en una búsqueda para reunirse con ella.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/deathstranding.jpg" alt="Death Stranding" class="cata-item">
+        <!-- MARVEL'S SPIDER MAN 1 -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/spidermanuno.jpg" alt="Marvel's Spider-Man">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Marvel's Spider-Man</p>
+                <p class="game-info">· Desarrollador: Insomniac Games - Marvel Games<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 7 de septiembre de 2018<br>
+                    · Género: Acción - Aventura<br>
+                    · Plataformas: PS4 - PS5 - Microsoft Windows<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Death Stranding</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Kojima Productions<br>
-                Distribuidor: Sony Interactive Entertainment - 505 Games<br>
-                Lanzamiento: 8 de noviembre de 2019<br>
-                Género: Aventura - Exploración - Apocalíptico<br>
-                Plataformas: PS4, PS5, Microsoft Windows<br>
-                Horas de campaña: 40-50 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/detroitbh.jpg" alt="Detroit: Become Human" class="cata-item">
+        <!-- MARVEL'S SPIDER MAN 2 -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/spidermandos.jpg" alt="Marvel's Spider-Man 2">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Marvel's Spider-Man 2</p>
+                <p class="game-info">· Desarrollador: Insomniac Games - Marvel Games<br>
+                    · Distribuidor: Sony Interactive Entertainment<br>
+                    · Lanzamiento: 20 de octubre de 2023<br>
+                    · Género: Acción - Aventura<br>
+                    · Plataformas: PS5<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Detroit: Become Human</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: Quantic Dream<br>
-                Distribuidor: Sony Interactive Entertainment<br>
-                Lanzamiento: 25 de mayo de 2018<br>
-                Género: Acción - Aventura - Ciencia Ficción - Cyberpunk<br>
-                Plataformas: PS4, Microsoft Windows<br>
-                Horas de campaña: 10-12 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="card-cata">
-            <div class="img-cata">
-                <img src="../images/doom.jpg" alt="Doom" class="cata-item">
+        <!-- METAL GEAR SOLID 3: SNAKE EATER -->
+        <div class="card-catalogo">
+            <div class="multi-sb">
+                <img class="game-img" src="../images/juegos/metalgearsolid.jpg" alt="Metal Gear Solid 3">
+                <ul class="multim-list">
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+                    <li><a class="multim-link" href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                </ul>
             </div>
-            <div class="carrito">
-                <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094" target="_blank">
-                    <font color="white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 
-                            1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h
-                            .61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 
-                            0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
-                        </svg>
-                    </font>
-                </a>
+            <div class="game-main">
+                <p class="game-title">Metal Gear Solid 3: Snake Eater</p>
+                <p class="game-info">· Desarrollador: Konami Computer Entertainment Japan<br>
+                    · Distribuidor: Konami Corporation<br>
+                    · Lanzamiento: 17 de noviembre de 2004<br>
+                    · Género: Acción - Aventura - Sigilo<br>
+                    · Plataformas: PS2, PS3, PS Vita, Xbox 360, Nintendo 3DS<br>
+                    · Horas de campaña: </p>
+                <p class="game-sinopsis">
+                    <br>
+                </p>
             </div>
-            <div class="tit-cata">
-                <p>Doom</p>
-            </div>
-            <div class="txt-cata">
-                <p>Desarrollador: id Software LLC<br>
-                Distribuidor: Bethesda Softworks<br>
-                Lanzamiento: 13 de mayo de 2016<br>
-                Género: Acción<br>
-                Plataformas: PS4, Xbox One, Microsoft Windows, Nintendo Switch<br>
-                Horas de campaña: 10-15 hs<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta illum dignissimos facilis iusto eligendi est numquam, id, atque aperiam hic architecto rerum eveniet! Nam expedita nobis qui libero quidem.</p>
-            </div>
-        </section>
+        </div>
 
     </main>
 
@@ -398,6 +332,8 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
     crossorigin="anonymous"></script>
 
-    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ea64268d78.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

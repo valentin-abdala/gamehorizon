@@ -8,15 +8,31 @@
     z-index: -2;
     width: 100%;
     height: 399px;
-    margin-top: 80px; 
-    #carr-img {
+    margin-top: 56px;
+    #carr-img1 {
+        filter: brightness(40%);
+        -webkit-filter: brightness(40%);
+        -moz-filter: brightness(40%);
+    }
+    #carr-img2 {
         filter: brightness(60%);
         -webkit-filter: brightness(60%);
         -moz-filter: brightness(60%);
     }
+    #carr-img3 {
+        filter: brightness(80%);
+        -webkit-filter: brightness(80%);
+        -moz-filter: brightness(80%);
+    }
     #carr-text {
         font-family: 'League Spartan', sans-serif;
-        font-size: 20px;
+        h3 {
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+        p {
+            font-size: 20px;
+        }
     }
 }
 

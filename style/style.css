@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 /* ANIMACIÓN DE CARGA */
 @keyframes fade-in {
   from {
@@ -32,12 +37,12 @@
 .img-wrapper > .cont-hover-index {
   position: absolute;
   inset: 0;
-  font-size: 12px;
+  font-size: 14px;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   font-family: "League Spartan", sans-serif;
-  text-align: justify;
+  text-align: left;
 }
 
 .img-wrapper > .grid-image-index,
@@ -63,78 +68,151 @@
 
 /* HEADER */
 header {
-  background-color: #0E0E7B;
-  color: #FFFFFF;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  position: relative;
-  top: 0;
+  background: #0E0E7B;
+  text-align: center;
+  animation: fade-in 0.5s ease;
   position: fixed;
   top: 0;
-  z-index: 3;
+  width: 100%;
+  z-index: 1000;
 }
-header .header-tit {
-  font-size: 30px;
-  font-family: "Stalinist One", cursive;
-  margin: 1.25% 15% 0% 10%;
-  user-select: all;
-  display: inline-block;
-  cursor: default;
-  animation: fade-in 0.5s ease;
-}
-header ul {
-  list-style: none;
-  margin-top: 4%;
-  font-size: 20px;
-}
-header ul .h-inactive:link {
+header .nav-title {
   color: #FFFFFF;
+  font-family: "Stalinist One", cursive;
+  font-size: 20px;
+  margin: 0;
+  padding: 16px;
+}
+header nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: #0E0E7B;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul .h-act {
+  background-color: #FFFFFF;
+  color: #0E0E7B;
+  padding: 10px;
+  border-radius: 25px;
+}
+header nav ul .h-inact {
   transition: 0.5s;
 }
-header ul .h-inactive:visited {
-  color: #FFFFFF;
-  transition: 0.25s;
-}
-header ul .h-inactive:hover {
+header nav ul .h-inact:hover {
   background-color: #FFFFFF;
   color: #0E0E7B;
-  border-radius: 45px;
-  padding: 6%;
-  transition: 0.25s;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.5s;
 }
-header ul .h-active {
-  background-color: #FFFFFF;
-  color: #0E0E7B;
-  border-radius: 45px;
-  padding: 6%;
-}
-header ul li {
-  display: inline-block;
+header nav ul li {
+  margin-bottom: 16px;
+  margin-left: 16px;
   font-family: "League Spartan", sans-serif;
 }
-header ul li a {
+header nav ul li a {
+  color: #FFFFFF;
   text-decoration: none;
-  margin-right: 40px;
-  animation: fade-in 0.5s ease;
+  font-size: 19px;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+header .burger-menu {
+  display: none;
+}
+header .burger-menu-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .burger-menu-label span,
+header .burger-menu-label span::before,
+header .burger-menu-label span::after {
+  display: block;
+  background: #FFFFFF;
+  height: 2px;
+  width: 32px;
+  border-radius: 5px;
+  position: relative;
+}
+header .burger-menu-label span::before,
+header .burger-menu-label span::after {
+  content: "";
+  position: absolute;
+}
+header .burger-menu-label span::before {
+  bottom: 8px;
+}
+header .burger-menu-label span::after {
+  top: 8px;
+}
+header .burger-menu:checked ~ nav {
+  transform: scale(1, 1);
+}
+header .burger-menu:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 800px) {
   header {
-    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  header .header-tit {
-    font-size: 16px;
-    margin: 2% 8% 0 2%;
+  header .nav-title {
+    grid-column: 2/span 1;
   }
-  header ul {
-    font-size: 10px;
-    margin-top: 5%;
+  header nav {
+    all: unset;
+    grid-column: 3/span 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  header ul li a {
-    margin-right: 4px;
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    margin-left: 48px;
+    margin-bottom: 0;
+  }
+  header nav ul li a {
+    opacity: 1;
+  }
+  header .burger-menu-label {
+    display: none;
   }
 }
+/* @media only screen and (max-width: 500px) {
+    header {
+        height: 40px;
+        .header-tit {
+            font-size: 16px;
+            margin: 2% 8% 0 2%;
+        }
+        ul {
+            font-size: 10px;
+            margin-top: 5%;
+            li a {
+                margin-right: 4px;
+            }
+        }
+    }
+} */
 /* FOOTER */
 #footer {
   background-color: #0E0E7B;
@@ -231,15 +309,31 @@ header ul li a {
   z-index: -2;
   width: 100%;
   height: 399px;
-  margin-top: 80px;
+  margin-top: 56px;
 }
-#carr #carr-img {
+#carr #carr-img1 {
+  filter: brightness(40%);
+  -webkit-filter: brightness(40%);
+  -moz-filter: brightness(40%);
+}
+#carr #carr-img2 {
   filter: brightness(60%);
   -webkit-filter: brightness(60%);
   -moz-filter: brightness(60%);
 }
+#carr #carr-img3 {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+}
 #carr #carr-text {
   font-family: "League Spartan", sans-serif;
+}
+#carr #carr-text h3 {
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+#carr #carr-text p {
   font-size: 20px;
 }
 
@@ -294,118 +388,149 @@ header ul li a {
 }
 /* CATÁLOGO */
 /* SELECTOR DE PAGINAS*/
-#pag-select {
-  width: 25%;
+.page-selector {
+  width: 100%;
+  max-width: 300px;
   margin: 0 auto;
-  margin-top: 7%;
-  margin-bottom: 4%;
+  font-family: "League Spartan", sans-serif;
+  margin-top: 90px;
+  margin-bottom: 50px;
   animation: fade-in 0.5s ease;
 }
-#pag-select #pag-sel-act {
-  background-color: #0E0E7B;
-  color: white;
-  border-radius: 10px;
+.page-selector ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
-#pag-select #pag-sel-inact {
+.page-selector ul .item-selector-inact {
   color: #0E0E7B;
-  border-radius: 10px;
+  border: 1px solid rgb(168, 168, 168);
   transition: 0.5s;
 }
-#pag-select #pag-sel-inact:hover {
-  background-color: #0E0E7B;
+.page-selector ul .item-selector-act {
   color: #FFFFFF;
-  transition: 0.5s;
-}
-
-/* CATÁLOGO CARDS */
-.card-cata {
   background-color: #0E0E7B;
-  position: relative;
-  width: 75%;
-  margin: 0 auto;
+  border: 1px solid #0E0E7B;
+}
+.page-selector ul .item-selector-act, .page-selector ul .item-selector-inact {
+  text-decoration: none;
+  padding: 10px;
   border-radius: 15px;
-  animation: fade-in 0.5s ease;
-  margin-bottom: 5%;
-  display: grid;
-  grid-template-columns: 22% 73% 5%;
-  grid-template-rows: 50px auto;
-  grid-template-areas: "img-cata tit-cata carrito" "img-cata txt-cata txt-cata";
+  font-size: 18px;
 }
-.card-cata .img-cata {
-  grid-area: img-cata;
-  margin: 8% 0% 8% 8%;
-}
-.card-cata .cata-item {
-  width: 195px;
-  height: 270px;
-}
-.card-cata .carrito {
-  grid-area: carrito;
-  width: 27px;
-  height: 27px;
-  margin-top: 25%;
-}
-.card-cata .tit-cata {
-  grid-area: tit-cata;
-  margin: 1% 0% 0% 0%;
-  color: white;
-  font-size: 27px;
-  font-weight: 700;
-  font-family: "League Spartan", sans-serif;
-}
-.card-cata .txt-cata {
-  grid-area: txt-cata;
-  color: white;
-  font-weight: 300;
-  font-size: 16px;
-  font-family: "League Spartan", sans-serif;
-  line-height: 1.6;
-}
-.card-cata .prox-sign {
-  position: absolute;
-  top: 84%;
-  width: 17.1%;
-  height: auto;
-  font-size: 20px;
-  text-align: center;
+.page-selector ul .item-selector-inact:hover {
+  background-color: #0E0E7B;
+  border: 1px solid #0E0E7B;
   color: #FFFFFF;
-  font-family: "League Spartan", sans-serif;
-  background: rgba(0, 0, 0, 0.65);
+  transition: 0.5s;
 }
 
-@media only screen and (max-width: 500px) {
-  .card-cata {
-    display: grid;
-    grid-template-columns: 22% 68% 10%;
-    grid-template-rows: 25px auto;
-    grid-template-areas: "img-cata tit-cata carrito" "img-cata txt-cata txt-cata";
+/*
+#pag-select {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    animation: fade-in 0.5s ease;
+    font-family: 'League Spartan', sans-serif;
+    #pag-sel-act {
+        background-color: #0E0E7B;
+        color: white;
+    }
+    #pag-sel-inact {
+        color: #0E0E7B;
+        transition: 0.5s;
+    }
+    #pag-sel-inact:hover {
+        background-color: #0E0E7B;
+        color: #FFFFFF;
+        transition: 0.5s;
+    }
+    .box-sel1 {
+        border-radius: 10px 0 0 10px;
+    }
+    .box-sel2 {
+        border-radius: 0 0 0 0;
+    }
+    .box-sel3 {
+        border-radius: 0 10px 10px 0;
+    }
+}
+*/
+.card-catalogo {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #0E0E7B;
+  animation: fade-in 0.5s ease;
+  transition: 0.5s;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2em;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+.card-catalogo .multi-sb .game-img {
+  width: 146px;
+  height: 202px;
+  margin-bottom: 0.75em;
+  border-radius: 15px;
+  border: 3px solid #FFFFFF;
+}
+.card-catalogo .multi-sb .multim-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  margin: 0 auto;
+}
+.card-catalogo .multi-sb .multim-list .multim-link {
+  opacity: 0.5;
+  font-size: 1.25rem;
+  transition: 0.5s;
+}
+.card-catalogo .multi-sb .multim-list .multim-link:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.card-catalogo .game-main {
+  font-family: "League Spartan", sans-serif;
+}
+.card-catalogo .game-main .game-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.card-catalogo .game-main .game-info, .card-catalogo .game-main .game-sinopsis {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-catalogo:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 600px) {
+  .card-catalogo {
+    flex-direction: row;
   }
-  .card-cata .img-cata {
-    margin: auto 0 auto 10%;
-  }
-  .card-cata .cata-item {
-    width: 97px;
-    height: 135px;
-  }
-  .card-cata .carrito {
-    height: 13px;
-    width: 13px;
-    margin-top: 1%;
-  }
-  .card-cata .tit-cata {
-    font-size: 13px;
-    margin: 1% 0 0 12%;
-  }
-  .card-cata .txt-cata {
-    font-size: 8px;
-    margin: 0 0 0 12%;
+  .game-main {
+    text-align: left;
+    margin-left: 2em;
   }
 }
 /* SOUNDTRACKS */
 .portada-st {
   width: 100%;
   height: 399px;
-  margin-top: 80px;
+  margin-top: 56px;
   animation: fade-in 0.5s ease;
   filter: brightness(40%);
   -webkit-filter: brightness(40%);
@@ -482,7 +607,7 @@ header ul li a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 20px 176px;
     font-size: 8px;
-    margin-top: 50px;
+    margin-top: 60px;
     column-gap: 3%;
     grid-template-areas: "txt-st1 txt-st2 txt-st3 txt-st4" "tema1 tema2 tema3 tema4";
   }

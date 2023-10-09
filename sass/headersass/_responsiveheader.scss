@@ -1,4 +1,45 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 800px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        .nav-title {
+            grid-column: 2 / span 1;
+        }
+        nav {
+            all: unset;
+            grid-column: 3 / span 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            ul {
+                display: flex;
+                li {
+                    margin-left: 48px;
+                    margin-bottom: 0;
+                    a {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .burger-menu-label {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 500px) {
     header {
         height: 40px;
         .header-tit {
@@ -13,4 +54,4 @@
             }
         }
     }
-}
+} */

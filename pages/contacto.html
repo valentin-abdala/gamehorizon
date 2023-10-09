@@ -29,16 +29,20 @@
 
     <!-- HEADER -->
     <header>
-        <p class="header-tit">GAME HORIZON</p>
+        <h1 class="nav-title">GAME HORIZON</h1>
+        <input type="checkbox" id="burger-menu" class="burger-menu">
         <nav>
             <ul>
-                <li><a href="../index.html" class="h-inactive">inicio</a></li>
-                <li><a href="../pages/catalogo.html" class="h-inactive">catálogo</a></li>
-                <li><a href="../pages/soundtracks.html" class="h-inactive">soundtracks</a></li>
-                <li><a href="../pages/trailers.html" class="h-inactive">trailers</a></li>
-                <li><a href="../pages/contacto.html" class="h-active">contacto</a></li>
+                <li><a href="../index.html" class="h-inact">Inicio</a></li>
+                <li><a href="../pages/catalogo.html" class="h-inact">Catálogo</a></li>
+                <li><a href="../pages/soundtracks.html" class="h-inact">Soundtracks</a></li>
+                <li><a href="../pages/trailers.html" class="h-inact">Trailers</a></li>
+                <li><a href="../pages/contacto.html" class="h-act">Contacto</a></li>
             </ul>
         </nav>
+        <label for="burger-menu" class="burger-menu-label">
+            <span></span>
+        </label>
     </header>
 
     <!-- MAIN -->
@@ -48,7 +52,7 @@
                 <p class="titulo-form">Completa el formulario y dejanos tu opinión y sugerencias</p>
                 <input type="text" class="form-input" placeholder="Nombre">
                 <input type="text" class="form-input" placeholder="Apellido">
-                <input type="date" class="form-input" id="date" placeholder="Fecha de nacimiento">
+                <input type="date" class="form-input" placeholder="Fecha de nacimiento">
                 <input type="email" class="form-input" placeholder="Mail">
                 <textarea class="form-input form-mensaje" placeholder="Comentarios"></textarea>
                 <input type="submit" value="Enviar" class="form-input form-rta">
