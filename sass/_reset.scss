@@ -37,7 +37,7 @@ $main-font: 'League Spartan', sans-serif;
 .img-wrapper > .cont-hover-index {
     position: absolute;
     inset: 0;
-    font-size: 14px;
+    font-size: 12px;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -46,10 +46,10 @@ $main-font: 'League Spartan', sans-serif;
 }
 .img-wrapper > .grid-image-index,
 .img-wrapper > .cont-hover-index {
-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 .img-wrapper > .cont-hover-index.fade {
-opacity: 0;
+    opacity: 0;
 }
 .img-wrapper:hover > .cont-hover-index.fade {
     opacity: 1;

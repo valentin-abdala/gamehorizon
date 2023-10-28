@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-around;
         list-style: none;
+        padding: 0;
         .item-selector-inact {
             color: $main-color;
             border: 1px solid rgb(168, 168, 168);
@@ -37,48 +38,8 @@
     }
 }
 
+/* CARTAS DEL CATÁLOGO */
 
-
-
-
-
-
-
-
-
-/*
-#pag-select {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 2%;
-    animation: fade-in 0.5s ease;
-    font-family: 'League Spartan', sans-serif;
-    #pag-sel-act {
-        background-color: #0E0E7B;
-        color: white;
-    }
-    #pag-sel-inact {
-        color: #0E0E7B;
-        transition: 0.5s;
-    }
-    #pag-sel-inact:hover {
-        background-color: #0E0E7B;
-        color: #FFFFFF;
-        transition: 0.5s;
-    }
-    .box-sel1 {
-        border-radius: 10px 0 0 10px;
-    }
-    .box-sel2 {
-        border-radius: 0 0 0 0;
-    }
-    .box-sel3 {
-        border-radius: 0 10px 10px 0;
-    }
-}
-*/
 .card-catalogo {
     width: 80%;
     max-width: 1000px;
@@ -93,6 +54,7 @@
     padding: 2em;
     border-radius: 15px;
     margin-bottom: 5%;
+    height: auto;
     .multi-sb {
         .game-img {
             width: 146px;

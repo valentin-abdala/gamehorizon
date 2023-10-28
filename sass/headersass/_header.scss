@@ -6,12 +6,14 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 0 30px 0;
     .nav-title {
         color: #FFFFFF;
         font-family: 'Stalinist One', cursive;
         font-size: 20px;
         margin: 0;
         padding: 16px;
+        text-align: center;
     }
     nav {
         position: absolute;
@@ -27,22 +29,6 @@ header {
             margin: 0;
             padding: 0;
             list-style: none;
-            .h-act {
-                background-color: #FFFFFF;
-                color: $main-color;
-                padding: 10px;
-                border-radius: 25px;
-            }
-            .h-inact {
-                transition: 0.5s;
-            }
-            .h-inact:hover {
-                background-color: #FFFFFF;
-                color: $main-color;
-                padding: 10px;
-                border-radius: 25px;
-                transition: 0.5s;
-            }
             li {
                 margin-bottom: 16px;
                 margin-left: 16px;

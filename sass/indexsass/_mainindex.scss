@@ -4,11 +4,15 @@
     z-index: 1;
 }
 
+#carr-prev, #carr-next {
+    align-items: center;
+}
+
 #carr {
     z-index: -2;
     width: 100%;
     height: 399px;
-    margin-top: 56px;
+    margin-top: 55px;
     #carr-img1 {
         filter: brightness(40%);
         -webkit-filter: brightness(40%);
@@ -38,6 +42,29 @@
 
 /* GRILLAS DE CATEGORÍAS */
 
+.categoria-container {
+    margin: 0 2% 0 2%;
+    .categoria-title {
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: $main-font;
+    }
+    .categoria-items {
+        max-width: 1300px;
+        margin: 0 auto;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+/*
 .categoria-container {
     margin: 3% 5% 75px 5%;
     width: 80%;
@@ -75,4 +102,4 @@
         width: 100%;
         height: 100%;
     }
-}
+} */

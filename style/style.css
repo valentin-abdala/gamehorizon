@@ -37,7 +37,7 @@ body {
 .img-wrapper > .cont-hover-index {
   position: absolute;
   inset: 0;
-  font-size: 14px;
+  font-size: 12px;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -75,6 +75,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 0 30px 0;
 }
 header .nav-title {
   color: #FFFFFF;
@@ -82,6 +83,7 @@ header .nav-title {
   font-size: 20px;
   margin: 0;
   padding: 16px;
+  text-align: center;
 }
 header nav {
   position: absolute;
@@ -98,22 +100,6 @@ header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-header nav ul .h-act {
-  background-color: #FFFFFF;
-  color: #0E0E7B;
-  padding: 10px;
-  border-radius: 25px;
-}
-header nav ul .h-inact {
-  transition: 0.5s;
-}
-header nav ul .h-inact:hover {
-  background-color: #FFFFFF;
-  color: #0E0E7B;
-  padding: 10px;
-  border-radius: 25px;
-  transition: 0.5s;
 }
 header nav ul li {
   margin-bottom: 16px;
@@ -186,6 +172,22 @@ header .burger-menu:checked ~ nav a {
   header nav ul {
     display: flex;
   }
+  header nav ul .h-act {
+    background-color: #FFFFFF;
+    color: #0E0E7B;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  header nav ul .h-inact {
+    transition: 0.5s;
+  }
+  header nav ul .h-inact:hover {
+    background-color: #FFFFFF;
+    color: #0E0E7B;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
   header nav ul li {
     margin-left: 48px;
     margin-bottom: 0;
@@ -197,106 +199,149 @@ header .burger-menu:checked ~ nav a {
     display: none;
   }
 }
-/* @media only screen and (max-width: 500px) {
-    header {
-        height: 40px;
-        .header-tit {
-            font-size: 16px;
-            margin: 2% 8% 0 2%;
-        }
-        ul {
-            font-size: 10px;
-            margin-top: 5%;
-            li a {
-                margin-right: 4px;
-            }
-        }
-    }
-} */
+@media only screen and (min-width: 800px) and (max-width: 915px) {
+  header {
+    display: grid;
+    grid-template-columns: auto minmax(550px, 3fr) 1fr;
+  }
+  header .nav-title {
+    font-size: 16px;
+    grid-column: 1/span 1;
+  }
+  header nav {
+    grid-column: 2/span 1;
+  }
+  header nav ul .h-act {
+    padding: 6px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 405px) {
+  header .nav-title {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  header .nav-title {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 275px) {
+  header .nav-title {
+    font-size: 10px;
+  }
+}
 /* FOOTER */
-#footer {
+footer {
+  margin-top: 40px;
   background-color: #0E0E7B;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 230px;
   position: relative;
   bottom: 0;
+  animation: fade-in 0.5s ease;
+  box-shadow: 30px 0 0 0;
 }
-#footer .links-footer {
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-#footer .links-footer a {
-  margin-right: 65px;
-}
-#footer .links-footer li {
-  display: inline-block;
-}
-#footer .f-inactive:link {
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: 0.5s;
-}
-#footer .f-inactive:visited {
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: 0.5s;
-}
-#footer .f-inactive:hover {
-  text-decoration: underline;
-  transition: 0.5s;
-}
-#footer .f-active {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-#footer .f-info {
-  color: #FFFFFF;
-  user-select: all;
-  width: 80%;
+footer .social-footer {
+  width: 100%;
+  max-width: 450px;
   margin: 0 auto;
+  font-size: 36px;
+}
+footer .social-footer ul {
+  list-style: none;
   display: flex;
-  cursor: default;
   justify-content: space-between;
+  padding: 0;
 }
-#footer .f-info .f-tit {
-  font-family: "Stalinist One", cursive;
-  font: 16px;
+footer .social-footer ul li {
+  margin-top: 25px;
+  transition: 0.5s;
+  width: 36px;
 }
-#footer .f-info .cr-f {
+footer .social-footer ul li a {
+  color: #FFFFFF;
+}
+footer .social-footer ul li:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+footer .social-footer h6 {
+  margin-top: 10px;
+  text-align: center;
+  max-width: 250px;
+}
+footer .social-footer h6::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  height: 2px;
+  width: 200px;
+  border-radius: 20px;
+}
+footer .links-footer {
+  max-width: 750px;
+  margin: 45px auto;
   font-family: "League Spartan", sans-serif;
-  font-size: 12px;
+  font-size: 20px;
 }
-#footer .f-info .redes-footer ul li {
-  display: inline-block;
+footer .links-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
 }
-#footer .f-info .redes-footer ul li a {
-  margin-right: 10%;
+footer .links-footer ul li {
+  transition: 0.5s;
 }
-#footer .f-info .redes-footer ul li .red-item {
-  width: 50px;
-  height: 50px;
+footer .links-footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .links-footer ul li:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+footer .cr-footer {
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  color: #FFFFFF;
+  font-size: 10px;
+  margin-top: 45px;
 }
 
 @media only screen and (max-width: 500px) {
-  .links-footer {
-    font-size: 10px;
+  footer {
+    height: 350px;
   }
-  .links-footer a {
-    margin-right: 20px;
+  footer .social-footer {
+    font-size: 30px;
+    max-width: 300px;
   }
-  .f-info .f-tit {
+  footer .social-footer h6::before {
+    display: none;
+  }
+  footer .links-footer {
+    margin-top: 20px;
+  }
+  footer .links-footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .links-footer ul li {
+    margin-bottom: 15px;
+  }
+  footer .cr-footer {
+    margin-top: -35px;
     font-size: 8px;
   }
-  .f-info .cr-f {
-    font-size: 6px;
-  }
-  .f-info .red-item {
-    width: 25px;
-    height: 25px;
+}
+@media only screen and (max-width: 365px) {
+  footer .social-footer {
+    max-width: 215px;
   }
 }
 /* INDEX */
@@ -305,11 +350,15 @@ header .burger-menu:checked ~ nav a {
   z-index: 1;
 }
 
+#carr-prev, #carr-next {
+  align-items: center;
+}
+
 #carr {
   z-index: -2;
   width: 100%;
   height: 399px;
-  margin-top: 56px;
+  margin-top: 55px;
 }
 #carr #carr-img1 {
   filter: brightness(40%);
@@ -339,51 +388,115 @@ header .burger-menu:checked ~ nav a {
 
 /* GRILLAS DE CATEGORÍAS */
 .categoria-container {
-  margin: 3% 5% 75px 5%;
-  width: 80%;
+  margin: 0 2% 0 2%;
+}
+.categoria-container .categoria-title {
+  max-width: 1300px;
   margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: 50px auto;
-  column-gap: 5%;
-  grid-template-areas: "categoria categoria categoria categoria categoria" "item1 item2 item3 item4 item5";
-}
-.categoria-container .tit-cate {
-  grid-area: categoria;
-  font-family: "League Spartan", sans-serif;
+  margin-top: 50px;
   font-size: 24px;
+  font-family: "League Spartan", sans-serif;
 }
-.categoria-container .griditemindex1 {
-  grid-area: item1;
+.categoria-container .categoria-items {
+  max-width: 1300px;
+  margin: 0 auto;
 }
-.categoria-container .griditemindex2 {
-  grid-area: item2;
-}
-.categoria-container .griditemindex3 {
-  grid-area: item3;
-}
-.categoria-container .griditemindex4 {
-  grid-area: item4;
-}
-.categoria-container .griditemindex5 {
-  grid-area: item5;
-}
-.categoria-container .grid-image-index {
-  width: 100%;
-  height: 100%;
+.categoria-container .categoria-items ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 500px) {
+/*
+.categoria-container {
+    margin: 3% 5% 75px 5%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid; 
+    grid-template-columns: repeat(5, auto); 
+    grid-template-rows: 50px auto; 
+    column-gap: 5%;
+    grid-template-areas: 
+    "categoria categoria categoria categoria categoria"
+    "item1 item2 item3 item4 item5"; 
+    .tit-cate { 
+        grid-area: categoria; 
+        font-family: 'League Spartan', sans-serif;
+        font-size: 24px;
+    }
+    .griditemindex1 { 
+        grid-area: item1; 
+    }
+    .griditemindex2 { 
+        grid-area: item2; 
+    }
+    .griditemindex3 { 
+        grid-area: item3; 
+    }
+    .griditemindex4 { 
+        grid-area: item4; 
+    }
+    .griditemindex5 { 
+        grid-area: item5; 
+    }
+    .grid-image-index {
+        width: 100%;
+        height: 100%;
+    }
+} */
+@media only screen and (max-width: 1345px) {
+  .categoria-container .categoria-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .categoria-container .categoria-title {
+    margin-top: -10px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  #carr-sign {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1125px) {
   #carouselExampleCaptions {
     display: none;
   }
-  .categoria-container {
-    margin-top: 50px;
+  .categoria-container .categoria-title {
+    margin-top: 80px;
   }
-  .categoria-container .tit-cate {
-    font-size: 16px;
+}
+@media only screen and (min-width: 413px) and (max-width: 1090px) {
+  .categoria-container .categoria-title {
+    margin: 80px 0 0 3%;
+  }
+  .categoria-container .categoria-items {
+    margin: 3% 3% 3% 3%;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .categoria-container .categoria-items ul li {
+    margin-top: 2%;
+  }
+}
+@media only screen and (max-width: 432px) {
+  .categoria-container .categoria-title {
+    text-align: center;
+  }
+  .categoria-container .categoria-items ul li {
+    max-width: 400px;
+    margin: 2% auto;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .categoria-container .categoria-items {
+    align-items: center;
   }
 }
 /* CATÁLOGO */
@@ -401,6 +514,7 @@ header .burger-menu:checked ~ nav a {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  padding: 0;
 }
 .page-selector ul .item-selector-inact {
   color: #0E0E7B;
@@ -425,39 +539,7 @@ header .burger-menu:checked ~ nav a {
   transition: 0.5s;
 }
 
-/*
-#pag-select {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 2%;
-    animation: fade-in 0.5s ease;
-    font-family: 'League Spartan', sans-serif;
-    #pag-sel-act {
-        background-color: #0E0E7B;
-        color: white;
-    }
-    #pag-sel-inact {
-        color: #0E0E7B;
-        transition: 0.5s;
-    }
-    #pag-sel-inact:hover {
-        background-color: #0E0E7B;
-        color: #FFFFFF;
-        transition: 0.5s;
-    }
-    .box-sel1 {
-        border-radius: 10px 0 0 10px;
-    }
-    .box-sel2 {
-        border-radius: 0 0 0 0;
-    }
-    .box-sel3 {
-        border-radius: 0 10px 10px 0;
-    }
-}
-*/
+/* CARTAS DEL CATÁLOGO */
 .card-catalogo {
   width: 80%;
   max-width: 1000px;
@@ -472,6 +554,7 @@ header .burger-menu:checked ~ nav a {
   padding: 2em;
   border-radius: 15px;
   margin-bottom: 5%;
+  height: auto;
 }
 .card-catalogo .multi-sb .game-img {
   width: 146px;
@@ -557,6 +640,7 @@ header .burger-menu:checked ~ nav a {
   width: 90%;
   margin: 0 auto;
   font-size: 20px;
+  animation: fade-in 0.5s ease;
   margin-top: 3%;
   margin-bottom: 3%;
   column-gap: 3%;
@@ -630,6 +714,9 @@ header .burger-menu:checked ~ nav a {
   width: 560px;
   height: 315px;
 }
+.trail-cont .trail-item iframe {
+  margin-bottom: 5px;
+}
 
 @media only screen and (max-width: 500px) {
   .trail-cont {
@@ -645,10 +732,10 @@ header .burger-menu:checked ~ nav a {
 }
 /* CONTACTO */
 form {
-  max-width: 400px;
+  max-width: 600px;
   border-radius: 10px;
   padding: 10px;
-  margin: 120px auto;
+  margin: 110px auto;
   background-color: #0E0E7B;
   animation: fade-in 0.5s ease;
 }
@@ -681,10 +768,13 @@ form .form-mensaje {
 form .form-rta {
   background-color: #FFFFFF;
   border: none;
+  width: 70px;
+  margin: 0 auto;
   font-weight: 700;
   cursor: pointer;
   color: #0E0E7B;
   transition: 0.5s;
+  border-radius: 50px;
 }
 form .form-rta:hover {
   text-decoration: underline;

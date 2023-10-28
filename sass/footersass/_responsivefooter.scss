@@ -1,20 +1,35 @@
 @media only screen and (max-width: 500px) {
-    .links-footer {
-        font-size: 10px;
-        a {
-            margin-right: 20px;
+    footer {
+        height: 350px;
+        .social-footer {
+            font-size: 30px;
+            max-width: 300px;
+            h6::before {
+                display: none;
+            }
         }
-    }
-    .f-info{
-        .f-tit {
+        .links-footer {
+            margin-top: 20px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .cr-footer {
+            margin-top: -35px;
             font-size: 8px;
         }
-        .cr-f {
-            font-size: 6px;
-        }
-        .red-item {
-            width: 25px;
-            height: 25px;
+    }  
+}
+
+@media only screen and (max-width: 365px) {
+    footer {
+        .social-footer {
+            max-width: 215px;
         }
     }
 }
